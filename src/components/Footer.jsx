@@ -38,7 +38,7 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/melinacorbalan/" target="_blank" rel="noreferrer" > Melina Corbalán</a>
             </p>
             {visible &&
-                <Link to="/">
+                <Link to="/melinacorbalan">
                     <img className="home-arrow" src={arrow} alt="arrow-home" onClick={scrollUp}/>
                 </Link>
             }

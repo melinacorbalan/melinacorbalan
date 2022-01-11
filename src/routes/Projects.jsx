@@ -22,7 +22,7 @@ const Projects = () => {
                 </a>
             </article>
             {/* ARROW */}
-            <Link to="/contact">
+            <Link to="/melinacorbalan/contact">
                 <span className="arrow-contact"></span>
             </Link>
         </section>

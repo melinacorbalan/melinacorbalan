@@ -14,7 +14,7 @@ const Title = () => {
             </div>
             {/* ARROW */}
             <div>
-                <Link to="/aboutme">
+                <Link to="/melinacorbalan/aboutme">
                     <span className="arrow-about"></span>
                 </Link>
             </div>

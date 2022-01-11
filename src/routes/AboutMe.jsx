@@ -25,7 +25,7 @@ const AboutMe = () => {
                     <img src={profileIMG} alt="profile-pic" />
                 </div>
                 {/* ARROW */}
-                <Link to="/projects">
+                <Link to="/melinacorbalan/projects">
                     <span className="arrow-projects"></span>
                 </Link>
             </section>
