@@ -1,0 +1,566 @@
+@import "../src/scss/variables";
+@import "../src/scss/estructure";
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto 80px;
+    grid-template-areas:
+        "nav"
+        "title"
+        "about"
+        "projects"
+        "contact"
+        "footer";
+
+
+    .nav {
+        font-size: 0.5rem;
+
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 1rem;
+
+        a {
+            color: $fontColor;
+            width: 3rem;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+    }
+
+    #title {
+        grid-area: title;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15% auto 20% auto;
+
+
+        .title {
+            border-right: 2px solid $backgroundColor;
+            font-size: 1rem;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            letter-spacing: .20em;
+        }
+
+        .anim-typewriter {
+            animation: typewriter 3.5s steps(44) 0.5s 1 normal both,
+                blinkTextCursor 500ms steps(44) infinite normal;
+        }
+
+        @keyframes typewriter {
+
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 18em;
+            }
+        }
+
+        @keyframes blinkTextCursor {
+
+            from {
+                border-right-color: $backgroundColor;
+            }
+
+            to {
+                border-right-color: $cursorColor;
+            }
+        }
+
+
+        #sub-title {
+            color: $backgroundColor;
+            font-size: 1rem;
+            text-align: center;
+            animation-name: subtitle;
+            animation-duration: 3s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes subtitle {
+            from {
+                color: $backgroundColor;
+            }
+
+            to {
+                color: $fontColor;
+            }
+
+        }
+
+        .arrow-about {
+            display: block;
+            margin-top: 30px;
+            width: 20px;
+            height: 20px;
+            border-bottom: 5px solid $backgroundColor;
+            border-right: 5px solid $backgroundColor;
+            transform: rotate(45deg);
+            animation: animation 2s 5s forwards;
+        }
+
+        @keyframes animation {
+            from {
+                border-bottom: 5px solid $backgroundColor;
+                border-right: 5px solid $backgroundColor;
+            }
+
+            to {
+                border-bottom: 5px solid $hoverColor;
+                border-right: 5px solid $hoverColor;
+                transform: rotate(45deg) translate(20px, 20px);
+            }
+        }
+    }
+
+    .about {
+        grid-area: about;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 2rem 8rem 5rem 8rem;
+        font-size: 0.5rem;
+        line-height: 2em;
+
+        img {
+            width: 20%;
+            height: fit-content;
+        }
+
+        h1 {
+            padding: 20px 0;
+            font-size: 1rem;
+        }
+
+        .about-flex {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+
+
+        .arrow-projects {
+            transform: translate(-50%, -50%);
+            align-self: center;
+            display: block;
+            margin-top: 30px;
+            width: 20px;
+            height: 20px;
+            border-bottom: 5px solid $hoverColor;
+            border-right: 5px solid $hoverColor;
+            transform: rotate(45deg);
+        }
+    }
+
+    .projects {
+        grid-area: projects;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            align-self: center;
+            padding: 20px 0;
+            font-size: 1rem;
+        }
+
+        .container-projects {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 50px 0;
+            gap: 1rem;
+
+            a {
+                display: flex;
+                border: 1px solid gray;
+
+                img {
+                    width: 300px;
+                    height: auto;
+                    opacity: 0.7;
+                }
+
+            }
+
+
+        }
+
+
+        .arrow-contact {
+            align-self: center;
+            display: block;
+            margin-top: 30px;
+            width: 20px;
+            height: 20px;
+            border-bottom: 5px solid $hoverColor;
+            border-right: 5px solid $hoverColor;
+            transform: rotate(45deg);
+        }
+
+
+    }
+
+    .contact {
+        grid-area: contact;
+        justify-self: center;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+
+        .contact-text {
+            text-align: center;
+            line-height: 2rem;
+            line-break: loose;
+
+            h1 {
+                font-size: 1rem;
+            }
+
+            a {
+                color: lightgray;
+                text-decoration: none;
+                border-bottom: 1px solid $fontColor;
+                color: $fontColor;
+                display: inline-block;
+                margin-top: 2rem;
+            }
+
+            p {
+                margin-top: 2rem;
+            }
+        }
+
+        .soMe {
+            display: flex;
+            flex-direction: row;
+            margin-top: 2rem;
+
+            a {
+                img {
+                    width: 1.3rem;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    footer {
+        grid-area: footer;
+        justify-self: center;
+        align-self: center;
+        font-size: 0.5rem;
+
+        a {
+            text-decoration: none;
+            color: $fontColor;
+        }
+
+        .home-arrow {
+            display: block;
+            width: 2rem;
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+
+        }
+    }
+
+
+
+}
+
+@media only screen and (min-width: 576px) {
+
+    .container {
+        .nav {
+            font-size: 0.7rem;
+
+            a {
+                width: 4rem;
+            }
+        }
+
+        footer {
+            font-size: 0.7rem;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+        .nav {
+            font-size: 1rem;
+
+            a {
+                width: 5rem;
+            }
+
+        }
+
+        #title {
+            .title {
+                font-size: 1.5rem;
+            }
+
+            #sub-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        .about {
+            font-size: 0.8rem;
+
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .projects {
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            .container-projects {
+                gap: 2rem;
+
+                a {
+                    img {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+
+        .contact {
+            .contact-text {
+                
+                h1 {
+                    font-size: 1.3rem;
+                }
+
+                a { 
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .soMe {
+                a {
+                    img {
+                        width: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        footer {
+            font-size: 1rem;
+
+            .home-arrow {
+                width: 2.5rem;
+            }
+        }
+
+
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .container {
+
+        .nav {
+            font-size: 1rem;
+
+            a {
+                width: 6rem;
+            }
+
+            a:hover {
+                color: $hoverTextColor;
+                font-weight: bold;
+                background-color: $hoverColor;
+                cursor: pointer;
+            }
+
+        }
+
+        #title {
+
+            .title {
+                font-size: 3em;
+            }
+
+            #sub-title {
+                font-size: 2em;
+            }
+
+            .arrow-about {
+                margin-top: 100px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .about {
+            font-size: 1.2em;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .about-flex {
+                flex-direction: row;
+            }
+
+
+            .arrow-projects {
+                margin-top: 3rem;
+                width: 30px;
+                height: 30px;
+                animation: animate 2s infinite;
+            }
+
+            @keyframes animate {
+                0% {
+                    opacity: 0;
+                    transform: rotate(45deg) translate(-20px, -20px);
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: rotate(45deg) translate(20px, 20px);
+                }
+            }
+        }
+
+        .projects {
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .container-projects {
+                flex-direction: row;
+
+                a {
+
+                    img {
+                        width: 400px;
+                    }
+
+                    img:hover {
+                        opacity: 1;
+                    }
+
+                }
+
+
+            }
+
+
+            .arrow-contact {
+                width: 30px;
+                height: 30px;
+                margin: 5rem;
+                animation: animate 2s infinite;
+            }
+
+            @keyframes animate {
+                0% {
+                    opacity: 0;
+                    transform: rotate(45deg) translate(-20px, -20px);
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: rotate(45deg) translate(20px, 20px);
+                }
+            }
+        }
+
+        .contact {
+
+            .contact-text {
+
+
+                a {
+                    margin-top: 2rem;
+                }
+
+                a:hover {
+                    color: $backgroundColor;
+                    background-color: $hoverColor;
+                }
+            }
+            
+            
+
+            .soMe {
+
+                a {
+                    img {
+                        width: 2rem;
+                    }
+
+                    img:hover {
+                        opacity: 0.5;
+                    }
+                }
+
+
+            }
+        }
+
+        footer {
+            .home-arrow {
+                width: 4rem;
+            }
+        }
+
+
+
+    }
+
+}
