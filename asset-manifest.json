@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/melinacorbalan/static/css/main.39418fda.css",
+    "main.css": "/melinacorbalan/static/css/main.364a2c90.css",
     "main.js": "/melinacorbalan/static/js/main.a72cda6d.js",
     "static/media/website.png": "/melinacorbalan/static/media/website.69ef13cd3ed861db0af8.png",
     "static/media/profile.png": "/melinacorbalan/static/media/profile.aad209ec04142141dc79.png",
@@ -10,11 +10,11 @@
     "static/media/arrow.png": "/melinacorbalan/static/media/arrow.a889b4c1db8a19c325ec.png",
     "static/media/github.png": "/melinacorbalan/static/media/github.0e74f17c4b316875f5d3.png",
     "index.html": "/melinacorbalan/index.html",
-    "main.39418fda.css.map": "/melinacorbalan/static/css/main.39418fda.css.map",
+    "main.364a2c90.css.map": "/melinacorbalan/static/css/main.364a2c90.css.map",
     "main.a72cda6d.js.map": "/melinacorbalan/static/js/main.a72cda6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.39418fda.css",
+    "static/css/main.364a2c90.css",
     "static/js/main.a72cda6d.js"
   ]
 }
