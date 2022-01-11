@@ -16,23 +16,38 @@
         "footer";
 
 
-    .nav {
-        font-size: 0.7rem;
+    .head {
 
-        grid-area: nav;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 1rem;
+        height: fit-content;
 
-        a {
-            color: $fontColor;
-            width: 3.5rem;
-            text-align: center;
-            text-decoration: none;
+        img {
+            width: 15px;
+            margin-left: 10px;
         }
 
+        .nav {
+            font-size: 0.7rem;
+            grid-area: nav;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            height: fit-content;
+
+            a {
+                color: $fontColor;
+                width: 3.5rem;
+                text-align: center;
+                text-decoration: none;
+            }
+
+        }
     }
+
 
     #title {
         grid-area: title;
@@ -133,8 +148,7 @@
         justify-content: center;
         align-items: center;
         margin: 2rem 4rem 5rem 4rem;
-        font-size: 0.5rem;
-        line-height: 2em;
+        line-height: 1.5rem;
 
         img {
             width: 25%;
@@ -297,13 +311,17 @@
 @media only screen and (min-width: 576px) {
 
     .container {
-        .nav {
-            font-size: 0.7rem;
 
-            a {
-                width: 4rem;
+        .head {
+            .nav {
+                font-size: 0.7rem;
+
+                a {
+                    width: 4rem;
+                }
             }
         }
+
 
         footer {
             font-size: 0.7rem;
@@ -315,14 +333,18 @@
 @media only screen and (min-width: 768px) {
 
     .container {
-        .nav {
-            font-size: 1rem;
 
-            a {
-                width: 5rem;
+        .head {
+            .nav {
+                font-size: 1rem;
+
+                a {
+                    width: 5rem;
+                }
+
             }
-
         }
+
 
         #title {
             .title {
@@ -361,12 +383,12 @@
 
         .contact {
             .contact-text {
-                
+
                 h1 {
                     font-size: 1.3rem;
                 }
 
-                a { 
+                a {
                     font-size: 1.3rem;
                 }
 
@@ -401,21 +423,29 @@
 
     .container {
 
-        .nav {
-            font-size: 1rem;
+        .head {
 
-            a {
-                width: 6rem;
+            img {
+                width: 20px;
             }
 
-            a:hover {
-                color: $hoverTextColor;
-                font-weight: bold;
-                background-color: $hoverColor;
-                cursor: pointer;
-            }
+            .nav {
+                font-size: 1rem;
 
+                a {
+                    width: 6rem;
+                }
+
+                a:hover {
+                    color: $hoverTextColor;
+                    font-weight: bold;
+                    background-color: $hoverColor;
+                    cursor: pointer;
+                }
+
+            }
         }
+
 
         #title {
 
@@ -435,8 +465,8 @@
         }
 
         .about {
-            font-size: 1.2em;
             margin: 2rem 8rem 5rem 8rem;
+            line-height: 2rem;
 
             h1 {
                 font-size: 1.5rem;
@@ -444,6 +474,10 @@
 
             .about-flex {
                 flex-direction: row;
+
+                p {
+                    font-size: 1.2rem;
+                }
             }
 
 
@@ -534,8 +568,8 @@
                     background-color: $hoverColor;
                 }
             }
-            
-            
+
+
 
             .soMe {
 

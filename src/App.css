@@ -16,18 +16,28 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto 80px;
   grid-template-areas: "nav" "title" "about" "projects" "contact" "footer"; }
-  .container .nav {
-    font-size: 0.7rem;
-    grid-area: nav;
+  .container .head {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 1rem; }
-    .container .nav a {
-      color: #d3d3d3;
-      width: 3.5rem;
-      text-align: center;
-      text-decoration: none; }
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    height: fit-content; }
+    .container .head img {
+      width: 15px;
+      margin-left: 10px; }
+    .container .head .nav {
+      font-size: 0.7rem;
+      grid-area: nav;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      height: fit-content; }
+      .container .head .nav a {
+        color: #d3d3d3;
+        width: 3.5rem;
+        text-align: center;
+        text-decoration: none; }
   .container #title {
     grid-area: title;
     display: flex;
@@ -95,8 +105,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 2rem 4rem 5rem 4rem;
-    font-size: 0.5rem;
-    line-height: 2em; }
+    line-height: 1.5rem; }
     .container .about img {
       width: 25%;
       height: fit-content; }
@@ -199,17 +208,17 @@ body {
       bottom: 5px; }
 
 @media only screen and (min-width: 576px) {
-  .container .nav {
+  .container .head .nav {
     font-size: 0.7rem; }
-    .container .nav a {
+    .container .head .nav a {
       width: 4rem; }
   .container footer {
     font-size: 0.7rem; } }
 
 @media only screen and (min-width: 768px) {
-  .container .nav {
+  .container .head .nav {
     font-size: 1rem; }
-    .container .nav a {
+    .container .head .nav a {
       width: 5rem; }
   .container #title .title {
     font-size: 1.5rem; }
@@ -239,11 +248,13 @@ body {
       width: 2.5rem; } }
 
 @media only screen and (min-width: 992px) {
-  .container .nav {
+  .container .head img {
+    width: 20px; }
+  .container .head .nav {
     font-size: 1rem; }
-    .container .nav a {
+    .container .head .nav a {
       width: 6rem; }
-    .container .nav a:hover {
+    .container .head .nav a:hover {
       color: #000000;
       font-weight: bold;
       background-color: #c5a242;
@@ -257,12 +268,14 @@ body {
     width: 30px;
     height: 30px; }
   .container .about {
-    font-size: 1.2em;
-    margin: 2rem 8rem 5rem 8rem; }
+    margin: 2rem 8rem 5rem 8rem;
+    line-height: 2rem; }
     .container .about h1 {
       font-size: 1.5rem; }
     .container .about .about-flex {
       flex-direction: row; }
+      .container .about .about-flex p {
+        font-size: 1.2rem; }
     .container .about .arrow-projects {
       margin-top: 3rem;
       width: 30px;
