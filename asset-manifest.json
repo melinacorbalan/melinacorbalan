@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/melinacorbalan/static/css/main.70001086.css",
-    "main.js": "/melinacorbalan/static/js/main.a72cda6d.js",
+    "main.css": "/melinacorbalan/static/css/main.332976c0.css",
+    "main.js": "/melinacorbalan/static/js/main.ffc250d2.js",
     "static/media/website.png": "/melinacorbalan/static/media/website.69ef13cd3ed861db0af8.png",
     "static/media/profile.png": "/melinacorbalan/static/media/profile.aad209ec04142141dc79.png",
     "static/media/Portfolio.png": "/melinacorbalan/static/media/Portfolio.24f3ec3bf63c0dc05839.png",
     "static/media/Calculator.png": "/melinacorbalan/static/media/Calculator.64347a5dff50bc095df3.png",
     "static/media/instagram.png": "/melinacorbalan/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/home-icon-silhouette.png": "/melinacorbalan/static/media/home-icon-silhouette.172c18cc56b7b989b1b7.png",
     "static/media/arrow.png": "/melinacorbalan/static/media/arrow.a889b4c1db8a19c325ec.png",
     "static/media/github.png": "/melinacorbalan/static/media/github.0e74f17c4b316875f5d3.png",
     "index.html": "/melinacorbalan/index.html",
-    "main.70001086.css.map": "/melinacorbalan/static/css/main.70001086.css.map",
-    "main.a72cda6d.js.map": "/melinacorbalan/static/js/main.a72cda6d.js.map"
+    "main.332976c0.css.map": "/melinacorbalan/static/css/main.332976c0.css.map",
+    "main.ffc250d2.js.map": "/melinacorbalan/static/js/main.ffc250d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.70001086.css",
-    "static/js/main.a72cda6d.js"
+    "static/css/main.332976c0.css",
+    "static/js/main.ffc250d2.js"
   ]
 }
