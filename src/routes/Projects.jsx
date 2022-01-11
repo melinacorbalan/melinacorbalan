@@ -11,13 +11,13 @@ const Projects = () => {
         <section className="projects">
             <h1 id="my-projects">My Projects</h1>
             <article className="container-projects">
-                <a href="https://melinacorbalan.github.io/final_project/" target="_blank" rel="noreferrer">
+                <a href="https://melinacorbalan.github.io/unlugardepelicula" target="_blank" rel="noreferrer">
                     <img src={websiteIMG} alt="" />
                 </a>
                 <a href="https://melinacorbalan.github.io/calculator/" target="_blank" rel="noreferrer">
                     <img src={calculatorIMG} alt="" />
                 </a>
-                <a href="https://melinacorbalan.github.io/my-portfolio/" target="_blank" rel="noreferrer">
+                <a href="https://melinacorbalan.github.io/melinacorbalan/" target="_blank" rel="noreferrer">
                     <img src={portfolioIMG} alt="" />
                 </a>
             </article>
