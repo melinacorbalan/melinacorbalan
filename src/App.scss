@@ -4,6 +4,7 @@
 .container {
 
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto 80px;
     grid-template-areas:
@@ -16,7 +17,7 @@
 
 
     .nav {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
 
         grid-area: nav;
         display: flex;
@@ -26,7 +27,7 @@
 
         a {
             color: $fontColor;
-            width: 3rem;
+            width: 3.5rem;
             text-align: center;
             text-decoration: none;
 
@@ -132,8 +133,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: auto;
-        margin: 2rem 8rem 5rem 8rem;
+        margin: 2rem 4rem 5rem 4rem;
         font-size: 0.5rem;
         line-height: 2em;
 
@@ -233,6 +233,7 @@
         flex-direction: column;
         align-items: center;
         height: 100vh;
+        margin: 0 1rem;
 
         .contact-text {
             text-align: center;
@@ -339,6 +340,7 @@
         .about {
             font-size: 0.8rem;
 
+
             h1 {
                 font-size: 1.3rem;
             }
@@ -437,6 +439,7 @@
 
         .about {
             font-size: 1.2em;
+            margin: 2rem 8rem 5rem 8rem;
 
             h1 {
                 font-size: 1.5rem;
